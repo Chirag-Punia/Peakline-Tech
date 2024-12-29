@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'http://localhost:5001/api' });
+const API = axios.create({ baseURL: 'https://peakline-tech.onrender.com/api' });
 
 export const getProducts = () => API.get('/products');
 export const getProduct = (id) => API.get(`/products/${id}`);
